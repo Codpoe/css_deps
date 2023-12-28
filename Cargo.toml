@@ -1,0 +1,17 @@
+[package]
+name = "css_deps"
+version = "0.1.0"
+edition = "2021"
+authors = ["Codpoe <codpoe.me@gmail.com>"]
+description = "Extract dependencies from CSS"
+keywords = ["CSS", "lightningcss", "dependencies"]
+repository = "https://github.com/codpoe/css_deps"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lightningcss = { version = "1.0.0-alpha.51" }
+
+[profile.release]
+lto = true
